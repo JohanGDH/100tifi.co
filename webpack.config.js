@@ -22,12 +22,12 @@ module.exports = {
         ]
     },
     plugins: [
-        new HTMLWebpackPlugin([
+        new HTMLWebpackPlugin(
             {
                 inject: true,
                 template:'./public/index.html',
                 filename: './index.html',
             }
-        ]),
+        ),
     ]
 }
