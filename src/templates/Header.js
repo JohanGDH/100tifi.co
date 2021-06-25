@@ -3,7 +3,7 @@ const Header = () => {
         <div class="Header-main">
             <div class="Header-logo">
                 <h1>
-                    <a href="/">
+                    <a href="https://johangdh.github.io/100tifi.co/">
                         <img src="https://partner.redbubble.com/partnership-portal/client/eab637076b22c782edf0015a0ec3c686.png">
                     </a>
                 </h1>
