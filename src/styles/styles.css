@@ -12,6 +12,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+  border-bottom: #62CA1C solid 2px;
 }
 
 .Header-main h1 a {
@@ -21,8 +23,16 @@ body {
   font-weight: bold;
 }
 
+.Header-logo {
+  width: 200px;
+  height: auto;
+}
+.Header-logo img{
+  width: 100%;
+}
 .Header-main  a {  
-  color: #62CA1C;  
+  color: #62CA1C;
+  text-decoration: none;  
 }
 
 .Main {
@@ -37,6 +47,25 @@ body {
   grid-gap: 1.5rem;
   grid-row-gap: 1.5em;
   display: grid;
+}
+
+.Character-Item:hover ~ .Character-Item{
+  /* transform: translate3d(20px, 0, 0); */
+  transform: translate3d(0px, 2px, 0)
+}
+
+.Characters:hover .Character-Item{
+  opacity: 0.3;
+}
+
+.Characters:hover .Character-Item:hover{
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.Character-Item a {
+  text-decoration: none;
+  color: black;
 }
 
 .Characters .status {
@@ -88,6 +117,8 @@ body {
   display: block;
   animation-duration: 2s;
   animation-name: fade;
+  transition: 450ms all;
+  transform-origin: center left;
 }
 
 .Character-Item img {
